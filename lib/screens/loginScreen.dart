@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             height: 300,
-            child: Lottie.asset("animations/logindf.json"),
+            child: Lottie.asset("animations/login.json"),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 22.0),
@@ -109,24 +109,19 @@ class LoginScreen extends StatelessWidget {
                       ],
                     ),
                     const Divider(),
-                  
-                
+
+// with custom text
+                    SignInButton(
+                      Buttons.google,
+                      text: "Sign up with Google",
+                      onPressed: () {},
+                    )
                   ],
                 ),
               ),
             ),
           ),
           const Divider(),
-          SignInButton(
-            Buttons.google,
-            Text("Google"),
-            onPressed: () {
-              
-            },
-          ),
-               const Divider(),
-                    
-          
         ]),
       ),
     );
